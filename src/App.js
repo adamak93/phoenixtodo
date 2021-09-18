@@ -6,7 +6,7 @@ import { VisibilityFilter } from './components/VisibilityFilter';
 function App() {
   return (
     <Container maxW = "container.sm">
-      <Heading my = "4">Phoenix Todo List: Powered by React and Redux.</Heading>
+      <Heading my = "4">Things To Do:</Heading>
       <AddTodo/>
       <VisibilityFilter/>
       <TodoList/>
