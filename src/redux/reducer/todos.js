@@ -1,16 +1,20 @@
-
+import { ADD_TODO, TOGGLE_TODO} from '../actionsTypes'
 const initialState = {
-    todos: [{
-        id: 1,
-        content: 'Adam Khafagy', 
-        completed: false
-    }]
+    todos: []
 }
 
 const todos = (state = initialState, action) => {
     switch(action.type) {
+        case ADD_TODO:
+            const { id, content } = action.payload;
+            return {
+                todos: [
+                    ...state.todos,
+                    { content, completed: false, id}
+                ]
+            }
         default:
-            return state.todos;
+            return state;
     }
 }
 

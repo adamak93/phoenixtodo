@@ -1,11 +1,15 @@
 import { Button, Flex, FormControl, Input} from '@chakra-ui/react';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addTodo } from '../redux/actions';
 
 export const AddTodo = () => {
+    const dispatch = useDispatch();
     const [value, setValue] = useState('');
 
     const handleSubmit = e => {
         e.preventDefault();
+        dispatch(addTodo(value));
         setValue('');
     }
     //If Input is in the textfield, then button is clickable, else it's not. Also prevents reload.
