@@ -8,4 +8,9 @@ export const addTodo = content => ({
         id: ++nextTodoId,
         content
     }
+});
+
+export const toggleTodo = id => ({
+    type: TOGGLE_TODO,
+    payload: { id }
 })

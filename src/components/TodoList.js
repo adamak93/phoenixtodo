@@ -8,10 +8,9 @@ export const TodoList = () => {
 
     return (
         <Box my = {3}>
-            {todos.todos .length ? todos.todos.map(todo => (
+            {todos.todos.length ? todos.todos.map(todo => (
                 <Todo key = {`todo-${todo.id}`} todo={todo}/>
-            )): <Box textAlign = "center" my="4">No tasks left, hooray!</Box>}
-            
+            )): <Box textAlign = "center" my="4">No tasks left, hooray!</Box>}    
         </Box>
     )
 }
