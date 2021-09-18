@@ -1,5 +1,4 @@
 import { Container , Tab, TabList, Tabs} from "@chakra-ui/react";
-import { object } from 'prop-types';
 import { VISIBILITY_FILTER } from "../constants";
 
 export const VisibilityFilter = () => {
