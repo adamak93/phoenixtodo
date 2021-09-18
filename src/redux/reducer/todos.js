@@ -19,8 +19,9 @@ const todos = (state = initialState, action) => {
             const todos = state.todos.map(obj =>  obj.id === id ? { ...obj, completed: !obj.completed } : obj);
             return { todos }
         }
-        default:
+        default: { 
             return state;
+        }
     }
 }
 

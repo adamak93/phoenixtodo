@@ -8,8 +8,8 @@ function App() {
     <Container maxW = "container.sm">
       <Heading my = "4">Phoenix Todo List: Powered by React and Redux.</Heading>
       <AddTodo/>
-      <TodoList/>
       <VisibilityFilter/>
+      <TodoList/>
     </Container>
   );
 }
