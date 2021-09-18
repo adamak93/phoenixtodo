@@ -1,9 +1,7 @@
-import React from 'react'
+import { Box } from '@chakra-ui/react'
 
 export const TodoList = () => {
     return (
-        <div>
-            TodoList
-        </div>
+        <Box textAlign = "center" my="4">No tasks left, hooray!</Box>
     )
 }
