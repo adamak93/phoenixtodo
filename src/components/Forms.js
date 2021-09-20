@@ -30,7 +30,7 @@ export default function Forms() {
         onChange={handleChange}
       />
       <button className="button-add" type="submit">
-        Add
+        +
       </button>
     </form>
   );
